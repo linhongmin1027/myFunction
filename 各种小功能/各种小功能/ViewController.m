@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MyCodeViewController.h"
 #import "LHMImagePicker.h"
+#import "MJViewController.h"
 @interface ViewController ()
 
 @end
@@ -35,6 +36,8 @@
 }
 #pragma mark--刷新
 - (IBAction)MJRefresh:(id)sender {
+    MJViewController *mj=[[MJViewController alloc]init];
+    [self presentViewController:mj animated:YES completion:nil];
 }
 #pragma mark--MBProgress
 - (IBAction)MBProgress:(id)sender {

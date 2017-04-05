@@ -63,6 +63,7 @@
 		6A612F6B1E9482060085800C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6A612F671E9482060085800C /* LICENSE */; };
 		6A612F6C1E9482060085800C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A612F691E9482060085800C /* MBProgressHUD.m */; };
 		6A612F6D1E9482060085800C /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 6A612F6A1E9482060085800C /* README.mdown */; };
+		6A612F851E950CC70085800C /* MJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A612F841E950CC70085800C /* MJViewController.m */; };
 		6A838C181E7D1F85008C48C2 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838C0C1E7D1F85008C48C2 /* AFHTTPSessionManager.m */; };
 		6A838C191E7D1F85008C48C2 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838C0F1E7D1F85008C48C2 /* AFNetworkReachabilityManager.m */; };
 		6A838C1A1E7D1F85008C48C2 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838C111E7D1F85008C48C2 /* AFSecurityPolicy.m */; };
@@ -200,6 +201,8 @@
 		6A612F681E9482060085800C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		6A612F691E9482060085800C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		6A612F6A1E9482060085800C /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		6A612F831E950CC70085800C /* MJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJViewController.h; sourceTree = "<group>"; };
+		6A612F841E950CC70085800C /* MJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJViewController.m; sourceTree = "<group>"; };
 		6A838C0B1E7D1F85008C48C2 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		6A838C0C1E7D1F85008C48C2 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		6A838C0D1E7D1F85008C48C2 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -549,6 +552,8 @@
 		6A612F711E94ECB10085800C /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				6A612F831E950CC70085800C /* MJViewController.h */,
+				6A612F841E950CC70085800C /* MJViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -921,6 +926,7 @@
 				6A612F1E1E9481F80085800C /* MJRefreshBackNormalFooter.m in Sources */,
 				6A612F601E9482000085800C /* UIImage+MultiFormat.m in Sources */,
 				6A612F271E9481F80085800C /* UIScrollView+MJRefresh.m in Sources */,
+				6A612F851E950CC70085800C /* MJViewController.m in Sources */,
 				6A612F561E9482000085800C /* SDImageCache.m in Sources */,
 				6A612F171E9481F80085800C /* MJRefreshComponent.m in Sources */,
 				6A838C231E7D2841008C48C2 /* LHMImagePicker.m in Sources */,
