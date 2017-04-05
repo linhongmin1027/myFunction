@@ -33,6 +33,27 @@
     }];
     
 }
+#pragma mark--刷新
+- (IBAction)MJRefresh:(id)sender {
+}
+#pragma mark--MBProgress
+- (IBAction)MBProgress:(id)sender {
+}
+#pragma mark--SDWebImage
+- (IBAction)SDWebImage:(id)sender {
+}
+#pragma mark--滚动视图
+- (IBAction)circleImg:(id)sender {
+}
+#pragma mark--网络请求
+- (IBAction)netWork:(id)sender {
+}
+#pragma mark--FMDB
+- (IBAction)FMDB:(id)sender {
+}
+#pragma mark--本地数据存储
+- (IBAction)SaveLocalData:(id)sender {
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -348,6 +348,9 @@
 		6A612EE11E9481F80085800C /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				6A612F711E94ECB10085800C /* controller */,
+				6A612F721E94ECB10085800C /* Libs */,
+				6A612F731E94ECB10085800C /* View */,
 				6A612EE21E9481F80085800C /* MJRefresh */,
 			);
 			path = MJRefresh;
@@ -461,6 +464,9 @@
 		6A612F2A1E9482000085800C /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				6A612F771E94ECE60085800C /* controller */,
+				6A612F781E94ECE60085800C /* Libs */,
+				6A612F791E94ECE60085800C /* View */,
 				6A612F2B1E9482000085800C /* SDWebImage */,
 			);
 			path = SDWebImage;
@@ -521,6 +527,9 @@
 		6A612F651E9482060085800C /* MBProgress */ = {
 			isa = PBXGroup;
 			children = (
+				6A612F741E94ECCB0085800C /* controller */,
+				6A612F751E94ECCB0085800C /* Libs */,
+				6A612F761E94ECCB0085800C /* View */,
 				6A612F661E9482060085800C /* MBProgressHUD */,
 			);
 			path = MBProgress;
@@ -535,6 +544,132 @@
 				6A612F6A1E9482060085800C /* README.mdown */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		6A612F711E94ECB10085800C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		6A612F721E94ECB10085800C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6A612F731E94ECB10085800C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A612F741E94ECCB0085800C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		6A612F751E94ECCB0085800C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6A612F761E94ECCB0085800C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A612F771E94ECE60085800C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		6A612F781E94ECE60085800C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6A612F791E94ECE60085800C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A612F7A1E94ECFC0085800C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		6A612F7B1E94ECFC0085800C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6A612F7C1E94ECFC0085800C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A612F7D1E94ED0E0085800C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		6A612F7E1E94ED0E0085800C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6A612F7F1E94ED0E0085800C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A612F801E94ED210085800C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		6A612F811E94ED210085800C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6A612F821E94ED210085800C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6A838C081E7D1F31008C48C2 /* 网络请求的封装 */ = {
@@ -591,6 +726,9 @@
 		6A838C251E7D2E44008C48C2 /* 滚动视图 */ = {
 			isa = PBXGroup;
 			children = (
+				6A612F7A1E94ECFC0085800C /* controller */,
+				6A612F7B1E94ECFC0085800C /* Libs */,
+				6A612F7C1E94ECFC0085800C /* View */,
 			);
 			path = "滚动视图";
 			sourceTree = "<group>";
@@ -598,6 +736,9 @@
 		6A838C261E7D2E44008C48C2 /* 会员信息存储 */ = {
 			isa = PBXGroup;
 			children = (
+				6A612F7D1E94ED0E0085800C /* controller */,
+				6A612F7E1E94ED0E0085800C /* Libs */,
+				6A612F7F1E94ED0E0085800C /* View */,
 			);
 			path = "会员信息存储";
 			sourceTree = "<group>";
@@ -605,6 +746,9 @@
 		6A838C271E7D2E44008C48C2 /* 加密 */ = {
 			isa = PBXGroup;
 			children = (
+				6A612F801E94ED210085800C /* controller */,
+				6A612F811E94ED210085800C /* Libs */,
+				6A612F821E94ED210085800C /* View */,
 			);
 			path = "加密";
 			sourceTree = "<group>";
