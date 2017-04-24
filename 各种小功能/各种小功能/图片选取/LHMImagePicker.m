@@ -7,6 +7,7 @@
 //
 
 #import "LHMImagePicker.h"
+#import "LMEditController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 @implementation LHMImagePicker
 {
@@ -35,6 +36,7 @@
                             image:(void(^)(UIImage *img))callback
                       editedImage:(void(^)(UIImage *editedImage))edited
 {
+    
     _viewController = vc;
     _imagecb = callback;
     _editedImage = edited;
@@ -66,7 +68,7 @@
 
 
 
--(void)pickImageFrom:(UIImagePickerControllerSourceType)type  edit:(BOOL)edit
+-(void)pickImageFrom:(UIImagePickerControllerSourceType)type  edit:(BOOL)edit 
 {
     //权限
     ALAuthorizationStatus author = [ALAssetsLibrary authorizationStatus];
@@ -77,11 +79,11 @@
         NSString * cancelTitle = @"知道了";
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:msg delegate:self cancelButtonTitle:cancelTitle otherButtonTitles:nil, nil];
         [alertView show];
-        
         return;
     }
     
     UIImagePickerController *picker = [[UIImagePickerController alloc]init];
+    
     picker.allowsEditing = edit;
     picker.delegate = self;
     picker.sourceType = type;
@@ -95,8 +97,17 @@
     UIImage *img = info[@"UIImagePickerControllerOriginalImage"];
     UIImage *edit = info[@"UIImagePickerControllerEditedImage"];
     _imagecb(img);
-    if (_editedImage) {
-        _editedImage(edit);
+    if (self.editType==LMEditTypeCircle)
+    {
+        LMEditController *editController=[[LMEditController alloc]init];
+        editController.sourceImage=img;
+        [picker pushViewController:editController animated:YES];
+        
+    }else{
+        if (_editedImage) {
+            _editedImage(edit);
+        }
+
     }
     
     [picker dismissViewControllerAnimated:YES completion:nil];

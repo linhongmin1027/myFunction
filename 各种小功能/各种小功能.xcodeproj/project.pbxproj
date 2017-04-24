@@ -19,6 +19,7 @@
 		6A1527BF1E7394490058ADF1 /* MyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1527BE1E7394490058ADF1 /* MyCodeViewController.m */; };
 		6A1527C21E7395760058ADF1 /* UIImage+RoundedRectImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1527C11E7395760058ADF1 /* UIImage+RoundedRectImage.m */; };
 		6A1527C41E7398730058ADF1 /* min.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A1527C31E7398730058ADF1 /* min.jpg */; };
+		6A4E226F1EAE031100BC822A /* LMEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E226E1EAE031100BC822A /* LMEditController.m */; };
 		6A612F141E9481F80085800C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6A612EE31E9481F80085800C /* LICENSE */; };
 		6A612F151E9481F80085800C /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A612EE71E9481F80085800C /* MJRefreshAutoFooter.m */; };
 		6A612F161E9481F80085800C /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A612EE91E9481F80085800C /* MJRefreshBackFooter.m */; };
@@ -64,6 +65,7 @@
 		6A612F6C1E9482060085800C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A612F691E9482060085800C /* MBProgressHUD.m */; };
 		6A612F6D1E9482060085800C /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 6A612F6A1E9482060085800C /* README.mdown */; };
 		6A612F851E950CC70085800C /* MJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A612F841E950CC70085800C /* MJViewController.m */; };
+		6A6993CB1E95EB4F0079E078 /* 效果1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6A6993CA1E95EB4E0079E078 /* 效果1.gif */; };
 		6A838C181E7D1F85008C48C2 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838C0C1E7D1F85008C48C2 /* AFHTTPSessionManager.m */; };
 		6A838C191E7D1F85008C48C2 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838C0F1E7D1F85008C48C2 /* AFNetworkReachabilityManager.m */; };
 		6A838C1A1E7D1F85008C48C2 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838C111E7D1F85008C48C2 /* AFSecurityPolicy.m */; };
@@ -118,6 +120,8 @@
 		6A1527C01E7395760058ADF1 /* UIImage+RoundedRectImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedRectImage.h"; sourceTree = "<group>"; };
 		6A1527C11E7395760058ADF1 /* UIImage+RoundedRectImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedRectImage.m"; sourceTree = "<group>"; };
 		6A1527C31E7398730058ADF1 /* min.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = min.jpg; sourceTree = "<group>"; };
+		6A4E226D1EAE031100BC822A /* LMEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMEditController.h; sourceTree = "<group>"; };
+		6A4E226E1EAE031100BC822A /* LMEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMEditController.m; sourceTree = "<group>"; };
 		6A612EE31E9481F80085800C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6A612EE61E9481F80085800C /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		6A612EE71E9481F80085800C /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 		6A612F6A1E9482060085800C /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		6A612F831E950CC70085800C /* MJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJViewController.h; sourceTree = "<group>"; };
 		6A612F841E950CC70085800C /* MJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJViewController.m; sourceTree = "<group>"; };
+		6A6993CA1E95EB4E0079E078 /* 效果1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "效果1.gif"; sourceTree = "<group>"; };
 		6A838C0B1E7D1F85008C48C2 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		6A838C0C1E7D1F85008C48C2 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		6A838C0D1E7D1F85008C48C2 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -276,6 +281,7 @@
 		6A1527841E73876A0058ADF1 /* 各种小功能 */ = {
 			isa = PBXGroup;
 			children = (
+				6A6993CA1E95EB4E0079E078 /* 效果1.gif */,
 				6A1527C31E7398730058ADF1 /* min.jpg */,
 				6A612F651E9482060085800C /* MBProgress */,
 				6A612F2A1E9482000085800C /* SDWebImage */,
@@ -331,6 +337,8 @@
 			children = (
 				6A838C211E7D2841008C48C2 /* LHMImagePicker.h */,
 				6A838C221E7D2841008C48C2 /* LHMImagePicker.m */,
+				6A4E226D1EAE031100BC822A /* LMEditController.h */,
+				6A4E226E1EAE031100BC822A /* LMEditController.m */,
 			);
 			path = "图片选取";
 			sourceTree = "<group>";
@@ -873,6 +881,7 @@
 				6A612F231E9481F80085800C /* MJRefresh.bundle in Resources */,
 				6A612F521E9482000085800C /* LICENSE in Resources */,
 				6A1527C41E7398730058ADF1 /* min.jpg in Resources */,
+				6A6993CB1E95EB4F0079E078 /* 效果1.gif in Resources */,
 				6A1527901E73876A0058ADF1 /* Main.storyboard in Resources */,
 				6A612F141E9481F80085800C /* LICENSE in Resources */,
 			);
@@ -936,6 +945,7 @@
 				6A612F161E9481F80085800C /* MJRefreshBackFooter.m in Sources */,
 				6A612F1F1E9481F80085800C /* MJRefreshBackStateFooter.m in Sources */,
 				6A612F201E9481F80085800C /* MJRefreshGifHeader.m in Sources */,
+				6A4E226F1EAE031100BC822A /* LMEditController.m in Sources */,
 				6A612F5D1E9482000085800C /* SDWebImagePrefetcher.m in Sources */,
 				6A612F641E9482000085800C /* UIView+WebCacheOperation.m in Sources */,
 				6A612F1D1E9481F80085800C /* MJRefreshBackGifFooter.m in Sources */,

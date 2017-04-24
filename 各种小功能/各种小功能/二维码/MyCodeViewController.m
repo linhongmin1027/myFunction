@@ -20,7 +20,7 @@
     _LHMImageView =[[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
     [self.view addSubview:_LHMImageView];
     //[self layoutUI];
-    [self creatQRCodeWith:self.LHMImageView openUrl:@"http://www.shougege.com/index.php?g=user&m=Share&a=index&u=129480" logoImg:[UIImage imageNamed:@"min.jpg"]];
+    [self creatQRCodeWith:self.LHMImageView openUrl:@"http://www.shougege.com/index.php?g=user&m=Share&a=index&u=129644" logoImg:[UIImage imageNamed:@"min.jpg"]];
 }
 -(void)creatQRCodeWith:(UIImageView *)showImgView openUrl:(NSString *)url logoImg:(UIImage *)logo{
     //使用iOS 7后的CIFilter对象操作，生成二维码图片imgQRCode（会拉伸图片，比较模糊，效果不佳）

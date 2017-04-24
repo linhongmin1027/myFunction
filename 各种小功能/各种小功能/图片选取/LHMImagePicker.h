@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+typedef NS_ENUM(NSInteger , LMEditType) {
+    LMEditTypeSquare =0,  //方形
+    LMEditTypeCircle      //圆形
+
+
+};
 @interface LHMImagePicker : NSObject<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 +(id)sharedInstance;
 
@@ -20,4 +26,5 @@
 
 @property (nonatomic,copy) void(^imagecb)(UIImage *image);
 @property (nonatomic,copy) void(^editedImage)(UIImage *image);
+@property(nonatomic,assign)LMEditType editType;
 @end

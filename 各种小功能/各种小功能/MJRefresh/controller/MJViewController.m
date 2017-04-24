@@ -7,14 +7,14 @@
 //
 
 #import "MJViewController.h"
-
+#import "MJRefresh.h"
 #import <objc/runtime.h>
 @interface MJViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableview;
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @end
 static NSString * tableViewCellId=@"tableViewCellId";
-static char kUITableViewIndexKey;
+
 @implementation MJViewController
 
 - (void)viewDidLoad {
@@ -24,7 +24,7 @@ static char kUITableViewIndexKey;
     
 }
 -(void)setupData{
-    _dataArray=[NSMutableArray arrayWithObjects:@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV", nil];
+    _dataArray=[NSMutableArray arrayWithObjects:@"gif图片",@"仿新浪微博",@"仿虎牙",@"仿饿了么",@"仿斗鱼TV",@"仿哔哩哔哩",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV",@"仿熊猫TV", nil];
 
 
 
@@ -46,22 +46,57 @@ static char kUITableViewIndexKey;
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableViewCellId];
     }
     cell.textLabel.text=_dataArray[indexPath.row];
-    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"提示" message:@"这是xx楼" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
-    objc_setAssociatedObject(alert, &kUITableViewIndexKey, indexPath, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [alert show];
+  
     return cell;
     
 }
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == 0) {
-        NSIndexPath *indexPath = objc_getAssociatedObject(alertView, &kUITableViewIndexKey);
-        NSLog(@"%@", indexPath);
-    }
-}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataArray.count;
     
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row==0) {
+        NSArray *imageArray=@[[UIImage imageNamed:@"效果1.1"],[UIImage imageNamed:@"效果1.2"],[UIImage imageNamed:@"效果1.3"]];
+        MJRefreshGifHeader *header=[MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshController)];
+        [header setImages:imageArray forState: MJRefreshStateIdle];
+        [header setImages:imageArray forState: MJRefreshStatePulling];
+        [header setImages:imageArray forState: MJRefreshStateRefreshing];
+        header.stateLabel.hidden=YES;
+        header.lastUpdatedTimeLabel.hidden=YES;
+        tableView.mj_header=header;
+  
+    }else if (indexPath.row==1){
+        
+        
+    
+    }else if (indexPath.row==2){
+        
+        
+    }
+    else if (indexPath.row==3){
+        
+        
+    }
+    else if (indexPath.row==4){
+        
+    }
+    else if (indexPath.row==5){
+        
+    }
+
+
+
+
+
+
+}
+-(void)refreshController{
+    [self.tableview.mj_header endRefreshing];
+
+
+
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

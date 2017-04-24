@@ -21,29 +21,34 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
         CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
         [filter setValue:data forKey:@"inputMessage"];
      [filter setValue:@"Q" forKey:@"inputCorrectionLevel"]; //设置纠错等级越高；即识别越容易，值可设置为L(Low) |  M(Medium) | Q | H(High)
+    CIImage *image=filter.outputImage;
        return filter.outputImage;
     }
 
 + (UIImage *)resizeQRCodeImage:(CIImage *)image withSize:(CGFloat)size {
-        CGRect extent = CGRectIntegral(image.extent);
-        CGFloat scale = MIN(size/CGRectGetWidth(extent), size/CGRectGetHeight(extent));
-        size_t width = CGRectGetWidth(extent) * scale;
-         size_t height = CGRectGetHeight(extent) * scale;
-         CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceGray();
-    
-         CGContextRef contextRef = CGBitmapContextCreate(nil, width, height, 8, 0, colorSpaceRef, (CGBitmapInfo)kCGImageAlphaNone);
-        CIContext *context = [CIContext contextWithOptions:nil];
-       CGImageRef imageRef = [context createCGImage:image fromRect:extent];
-        CGContextSetInterpolationQuality(contextRef, kCGInterpolationNone);
-       CGContextScaleCTM(contextRef, scale, scale);
-         CGContextDrawImage(contextRef, extent, imageRef);
-   
-         CGImageRef imageRefResized = CGBitmapContextCreateImage(contextRef);
-    
-        //Release
-       CGContextRelease(contextRef);
-       CGImageRelease(imageRef);
-        return [UIImage imageWithCGImage:imageRefResized];
+     
+    //
+    CGRect extent = CGRectIntegral(image.extent);
+    CGFloat scale = MIN(size/CGRectGetWidth(extent), size/CGRectGetHeight(extent));
+    // 创建bitmap;
+    size_t width = CGRectGetWidth(extent) * scale;
+    size_t height = CGRectGetHeight(extent) * scale;
+    CGColorSpaceRef cs = CGColorSpaceCreateDeviceGray();
+    CGContextRef bitmapRef = CGBitmapContextCreate(nil, width, height, 8, 0, cs, (CGBitmapInfo)kCGImageAlphaNone);
+    CGColorSpaceRelease(cs);
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CGImageRef bitmapImage = [context createCGImage:image fromRect:extent];
+    CGContextSetInterpolationQuality(bitmapRef, kCGInterpolationNone);
+    CGContextScaleCTM(bitmapRef, scale, scale);
+    CGContextDrawImage(bitmapRef, extent, bitmapImage);
+    // 保存bitmap到图片
+    CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
+    CGContextRelease(bitmapRef);
+    CGImageRelease(bitmapImage);
+    UIImage *aImage = [UIImage imageWithCGImage:scaledImage];
+    CGImageRelease(scaledImage);
+    return aImage;
+
      }
 
 + (UIImage *)specialColorImage:(UIImage*)image withRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {
